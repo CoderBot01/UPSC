@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%; /* Very light cool grey */
+    --foreground: 220 15% 25%; /* Dark cool grey for text */
+
+    --muted: 220 15% 88%;
+    --muted-foreground: 220 15% 45%;
+
+    --popover: 220 20% 100%;
+    --popover-foreground: 220 15% 25%;
+
+    --card: 220 20% 100%;
+    --card-foreground: 220 15% 25%;
+
+    --border: 220 15% 88%; /* Softer border */
+    --input: 220 15% 92%; /* Slightly lighter input background */
+
+    --primary: 221 83% 53%; /* Professional Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 216 34% 88%; /* Lighter, softer blue-grey */
+    --secondary-foreground: 221 83% 25%; /* Darker blue for text on secondary */
+
+    --accent: 190 60% 45%; /* Teal accent */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 221 83% 53%; /* Primary color for rings */
+    --radius: 0.5rem;
+
+    /* Sidebar specific variables */
+    --sidebar-background: 220 15% 98%; /* Very light, almost white grey */
+    --sidebar-foreground: 220 15% 20%; /* Darker text for sidebar */
+    --sidebar-border: 220 15% 92%; /* Subtle border */
+    
+    --sidebar-primary: 221 83% 53%; /* Primary blue for active/selected */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on primary */
+    
+    --sidebar-accent: 220 15% 94%; /* Slightly darker light grey for hover background */
+    --sidebar-accent-foreground: 221 83% 40%; /* Darker primary for hover text */
+    
+    --sidebar-ring: 190 60% 45%; /* Accent for focus rings in sidebar */
+
+    --chart-1: 221 83% 60%;
+    --chart-2: 190 60% 55%;
+    --chart-3: 210 50% 60%;
+    --chart-4: 30 80% 60%;
+    --chart-5: 100 40% 55%;
+  }
+
+  .dark {
+    --background: 220 15% 10%; /* Dark slate grey */
+    --foreground: 220 10% 90%; /* Light grey for text */
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 70%;
+
+    --popover: 220 15% 8%;
+    --popover-foreground: 220 10% 90%;
+
+    --card: 220 15% 12%; /* Slightly lighter than background for cards */
+    --card-foreground: 220 10% 90%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 18%;
+
+    --primary: 221 75% 65%; /* Slightly lighter Blue for dark mode */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 30% 28%; /* Darker, muted blue-grey */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 190 55% 55%; /* Slightly lighter Teal for dark mode */
+    --accent-foreground: 220 15% 10%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 221 75% 65%; /* Primary color for rings */
+
+    /* Dark Sidebar specific variables */
+    --sidebar-background: 220 15% 12%; 
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-border: 220 15% 18%;
+    
+    --sidebar-primary: 221 75% 65%; 
+    --sidebar-primary-foreground: 0 0% 100%;
+    
+    --sidebar-accent: 220 15% 22%; 
+    --sidebar-accent-foreground: 0 0% 100%;
+    
+    --sidebar-ring: 190 55% 55%;
+
+    --chart-1: 221 75% 70%;
+    --chart-2: 190 55% 65%;
+    --chart-3: 210 50% 70%;
+    --chart-4: 30 80% 70%;
+    --chart-5: 100 40% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
