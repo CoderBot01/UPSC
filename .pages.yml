@@ -4,7 +4,7 @@ content:
   - name: posts
     label: "Blog Posts"
     type: collection
-    path: "_posts"            # required: folder path for markdown blog posts
+    path: "_posts"            
     create: true
     view:
       fields: [title, date, author]
@@ -35,7 +35,7 @@ content:
   - name: siteConfig
     label: "Site Configuration"
     type: file
-    path: "src/_data/site.json"  # required: path to the single config file
+    path: "src/_data/site.json"
     fields:
       - name: title
         label: Website Title
